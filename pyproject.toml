@@ -1,0 +1,21 @@
+[project]
+name = "jarvis"
+version = "0.1.0"
+description = "Local voice-controlled AI assistant for Omarchy/Hyprland"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "faster-whisper>=1.0.3",
+    "sounddevice>=0.4.7",
+    "numpy>=1.26",
+    "piper-tts>=1.2.0",
+    "ollama>=0.4.0",
+    "nvidia-cublas-cu12>=12.9.2.10",
+    "nvidia-cudnn-cu12>=9.22.0.52",
+    "chromadb>=1.5.9",
+    "openwakeword",
+]
+
+[tool.uv.sources]
+# PyPI's openwakeword 0.6.0 still requires tflite-runtime, which has no
+# Python 3.12 wheels. Git main has migrated to ai-edge-litert (cp312-ready).
+openwakeword = { git = "https://github.com/dscripka/openWakeWord", rev = "main" }

@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Large voice/model files — download separately (see README)
+voices/
+
+# Runtime IPC / generated
+*.fifo
+.trigger.fifo
+
+# Internal working notes — contains personal & network data, do NOT publish
+HANDOFF.md
