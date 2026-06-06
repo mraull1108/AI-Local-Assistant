@@ -1,4 +1,4 @@
-# Jarvis
+# AI Local Assistant (Jarvis)
 
 Local voice-controlled AI assistant for Omarchy/Hyprland.
 
